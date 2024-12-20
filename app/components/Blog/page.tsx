@@ -10,6 +10,7 @@ interface BlogCardProps {
   views: string;
   image: string;
   priority: number;
+  topic: string;
 }
 
 const BlogCard: React.FC<BlogCardProps> = (blog) => {
@@ -24,17 +25,37 @@ const BlogCard: React.FC<BlogCardProps> = (blog) => {
           blog.priority <= 2
             ? "h-[10rem] sm:h-[18rem] w-[15rem]"
             : "w-[10rem] h-[10rem]"
-        } flex items-center justify-center`}
+        } relative flex items-center justify-center`}
       >
         <img
           className="object-cover w-full h-full"
           src={blog.image}
           alt="Movie"
         />
+        <div className="absolute bottom-0 bg-black bg-opacity-50 w-full p-2">
+          <h3 className="text-white text-s md:text-lg font-bold  text-center">
+            {blog.topic}
+          </h3>
+        </div>
       </figure>
-      <div className="card-body">
-        <h2 className="card-title text-xs md:text-xl">{blog.title}</h2>
-        <p className="text-xs md:text-lg">
+
+      <div className="card-body -m-[1rem]">
+        {blog.priority <= 2 ? (
+          <button className=" btn btn-outline  text-[#00665E] rounded-full w-1/4 h-[1em]">
+            {blog.category}
+          </button>
+        ) : (
+          <h2 className="  text-[#00665E]">{blog.category}</h2>
+        )}
+
+        <h2
+          className={`card-title  ${
+            blog.priority <= 2 ? "text-xs md:text-xl md:mt-4 " : "text-md"
+          }`}
+        >
+          {blog.title}
+        </h2>
+        <p className="text-xs md:text-sm">
           {blog.description.length > 90
             ? `${blog.description.slice(0, 90)}...`
             : blog.description}
@@ -57,7 +78,7 @@ const Blog: React.FC<{ blogs: BlogCardProps[] }> = ({ blogs }) => {
       <div className="flex items-center justify-between">
         <div className="flex items-center">
           <Image src={IconVideo} alt="icon" className="mr-2" />
-          <h1 className="text-lg font-semibold">บทความล่าสุด</h1>
+          <h1 className="text-lg font-semibold">บทความและข่าวสารล่าสุด</h1>
         </div>
 
         <button className="hidden md:block btn btn-outline btn-success rounded-full">

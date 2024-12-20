@@ -134,6 +134,8 @@ export const MAIN_BLOG_DATA = [
 ];
 export const BLOG_DATA = [
   {
+    topic: "profit / loss of stocks in the portfolio",
+    category: "Business",
     title: "กำไร/ขาดทุนของหุ้นในพอร์ตต้องดูอย่างไร?",
     category: "Business",
     description:
@@ -144,6 +146,8 @@ export const BLOG_DATA = [
     image: "/blog/Rectangle43.png",
   },
   {
+    topic: "What is a Data Engineer",
+    category: "Data",
     title: "Data Pipelines with Airflow",
     category: "Tech",
     description:
@@ -154,8 +158,9 @@ export const BLOG_DATA = [
     image: "/blog/Rectangle55.png",
   },
   {
-    title: "ร่างกายสามารถชะลอวัย 'อายุชีวภาพ'",
+    topic: "สารแทนน้ำตาลไม่อันตราย",
     category: "Science",
+    title: "ร่างกายสามารถชะลอวัย 'อายุชีวภาพ'",
     description:
       "ความลับของการชะลอวัยด้วยการวิจัย ‘อายุชีวภาพ’ ศึกษาจากเซลล์ร่างกายเพื่อยืดอายุการทำงาน...",
     date: "29 กรกฎาคม 2023",
@@ -164,8 +169,9 @@ export const BLOG_DATA = [
     image: "/blog/Rectangle58.png",
   },
   {
+    topic: "Data Pipelines with Airflow",
+    category: "Tech",
     title: "Data Engineer คืออะไร?",
-    category: "Science",
     description:
       "Data Engineer คือคนที่ทำงาน กับหลากหลายเครื่องมือเพื่อรวบรวมข้อมูลจัดการข้อมูลและเปลี่ยนข้อมูลดิบ ให้พร้อมใช้งาน สำหรับทั้ง Data Scientist และ Data Analyst ",
     date: "29 กรกฎาคม 2023",
@@ -174,8 +180,10 @@ export const BLOG_DATA = [
     image: "/blog/Rectangle59.png",
   },
   {
-    title: "สารแทนน้ำตาลไม่อันตราย",
+    topic: "ร่างกายสามารถย้อนวัย “อายุชีวภาพ” ",
     category: "Science",
+    title: "สารแทนน้ำตาลไม่อันตราย",
+
     description:
       "สารให้ความหวานมีความปลอดภัยแค่ไหนเมื่อใช้ในอาหาร? งานวิจัยชี้ให้เห็นถึงประโยชน์และความเสี่ยง...",
     date: "29 กรกฎาคม 2023",
