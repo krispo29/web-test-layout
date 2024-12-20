@@ -41,11 +41,11 @@ const BlogCard: React.FC<BlogCardProps> = (blog) => {
 
       <div className="card-body -m-[1rem]">
         {blog.priority <= 2 ? (
-          <button className=" btn btn-outline  text-[#00665E] rounded-full w-1/4 h-[1em]">
+          <button className=" btn btn-outline  text-[#00665E] rounded-full btn-sm w-1/4 text-xs  ">
             {blog.category}
           </button>
         ) : (
-          <h2 className="  text-[#00665E]">{blog.category}</h2>
+          <h2 className="text-[#00665E]">{blog.category}</h2>
         )}
 
         <h2
@@ -81,7 +81,7 @@ const Blog: React.FC<{ blogs: BlogCardProps[] }> = ({ blogs }) => {
           <h1 className="text-lg font-semibold">บทความและข่าวสารล่าสุด</h1>
         </div>
 
-        <button className="hidden md:block btn btn-outline btn-success rounded-full">
+        <button className="hidden md:block btn btn-outline rounded-full text-[#A8AD00]">
           ดูทั้งหมด
         </button>
       </div>
@@ -106,7 +106,7 @@ const Blog: React.FC<{ blogs: BlogCardProps[] }> = ({ blogs }) => {
         </div>
       </div>
       <div className="flex w-full">
-        <button className="btn btn-outline btn-success rounded-full mt-8 mx-auto w-2/3 md:hidden">
+        <button className="btn btn-outline  rounded-full mt-8 mx-auto w-2/3 md:hidden text-[#A8AD00]">
           ดูทั้งหมด
         </button>
       </div>

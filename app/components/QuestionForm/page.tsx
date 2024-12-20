@@ -132,10 +132,10 @@ const QuestionForm = () => {
           />
         </div>
 
-        <div className="flex justify-end">
+        <div className="flex justify-center md:justify-end">
           <button
             type="submit"
-            className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600"
+            className="px-4 py-2 w-2/4 md:w-1/4 bg-[#A8AD00] text-white rounded-lg"
           >
             ส่ง
           </button>

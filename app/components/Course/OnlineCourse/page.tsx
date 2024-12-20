@@ -108,11 +108,11 @@ const OnlineCourse: React.FC<{ cards: CarouselCardProps[] }> = ({ cards }) => {
           <Image src={IconVideo} alt="icon" className="mr-2" />
           <h1 className="text-lg font-semibold">คอร์สออนไลน์</h1>
         </div>
-        <button className="hidden md:block btn btn-outline btn-success rounded-full">
+        <button className="hidden md:block btn btn-outline text-[#A8AD00] rounded-full">
           ดูทั้งหมด
         </button>
       </div>
-      <div className="flex space-x-4   snap-x snap-mandatory scrollbar-hide mt-4 justify-center">
+      <div className="flex space-x-4  snap-x snap-mandatory scrollbar-hide mt-4 justify-center">
         {cards.map((card, index) => (
           <div
             key={index}
@@ -124,7 +124,7 @@ const OnlineCourse: React.FC<{ cards: CarouselCardProps[] }> = ({ cards }) => {
           </div>
         ))}
       </div>
-      <div className="absolute top-1/2 -translate-y-1/2 w-full flex justify-between px-4">
+      <div className=" absolute top-1/2 -translate-y-1/2 w-full md:flex justify-between px-4 hidden ">
         <button
           onClick={handlePrev}
           className="p-2 bg-white rounded-full shadow-md hover:bg-gray-200 transition-colors"
@@ -139,7 +139,7 @@ const OnlineCourse: React.FC<{ cards: CarouselCardProps[] }> = ({ cards }) => {
         </button>
       </div>
       <div className="flex w-full mt-4">
-        <button className="btn btn-outline btn-success rounded-full mt-8 mx-auto w-2/3 md:hidden">
+        <button className="btn btn-outline text-[#A8AD00] rounded-full mt-8 mx-auto w-2/3 md:hidden">
           ดูทั้งหมด
         </button>
       </div>

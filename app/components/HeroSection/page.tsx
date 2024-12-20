@@ -27,14 +27,12 @@ const Card: React.FC<CardProps & { index: number }> = ({
         ${
           index === 0
             ? "md:h-[25rem] md:w-[25rem] h-[20rem] w-full"
-            : " w-[5rem] md:h-[25rem] md:w-[8rem] h-[20rem] w-full "
-        } ${index === 2 ? "hidden md:block" : ""}
-        bg-white rounded-2xl shadow-md overflow-hidden my-2 md:my-4 p-2 md:p-4 transition-all
+            : " w-[5rem] md:h-[25rem] md:w-[8rem] h-[20rem] "
+        } ${index === 2 ? "hidden md:block" : ""} 
+        bg-white rounded-2xl shadow-md overflow-hidden my-2 md:my-4 p-2 md:p-4 transition-all object-cover object-center
       `}
       style={{
         backgroundColor,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
       }}
     >
       <div className="flex flex-col justify-between h-full p-2 md:p-4">
